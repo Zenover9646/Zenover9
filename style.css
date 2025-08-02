@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fafdff;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 36px 0 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2em;
+    color: #5e60ce;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.logo i {
+    color: #5e60ce;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: #222;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #555;
+    font-size: 1.08rem;
+    margin-bottom: 22px;
+}
+
+.emojis {
+    font-size: 1.3em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.site-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(94, 96, 206, 0.07);
+    padding: 32px 18px 22px 18px;
+    border: none;
+    transition: box-shadow 0.2s, transform 0.18s, background 0.2s;
+    position: relative;
+    min-height: 370px;
+}
+
+.site-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(94, 96, 206, 0.13);
+    transform: translateY(-4px) scale(1.03);
+    background: #f4f7fe;
+}
+
+.site-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    box-shadow: 0 1px 4px #b3e5fc33;
+}
+
+.site-title {
+    font-size: 1.13em;
+    font-weight: 700;
+    color: #5e60ce;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.site-desc {
+    color: #444;
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.site-tag {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #5e60ce;
+    border-radius: 8px;
+    padding: 2px 10px;
+    font-size: 0.93em;
+    margin-top: 4px;
+}
+
+.site-card a {
+    background: linear-gradient(90deg, #5e60ce 0%, #48bfe3 100%);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1em;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: auto;
+    box-shadow: 0 1px 4px rgba(94, 96, 206, 0.09);
+    align-self: center;
+}
+
+.site-card a:hover {
+    background: linear-gradient(90deg, #48bfe3 0%, #5e60ce 100%);
+    transform: scale(1.05);
+}
+
+/* Couleurs pastel différentes pour chaque carte */
+.site-card.accent1 {
+    border-bottom: 5px solid #48bfe3;
+}
+.site-card.accent2 {
+    border-bottom: 5px solid #80ffdb;
+}
+.site-card.accent3 {
+    border-bottom: 5px solid #ffd6e0;
+}
+.site-card.accent4 {
+    border-bottom: 5px solid #bdb2ff;
+}
+.site-card.accent5 {
+    border-bottom: 5px solid #fdffb6;
+}
+.site-card.accent6 {
+    border-bottom: 5px solid #caffbf;
+}
+.site-card.accent7 {
+    border-bottom: 5px solid #a0c4ff;
+}
+.site-card.accent8 {
+    border-bottom: 5px solid #ffc6ff;
+}
+.site-card.accent9 {
+    border-bottom: 5px solid #b5ead7;
+}
+.site-card.accent10 {
+    border-bottom: 5px solid #ffd6a5;
+}
+
+@media (max-width: 900px) {
+    .sites-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding-bottom: 18px;
+    }
+    .site-card {
+        padding: 14px 4px 10px 4px;
+        min-height: 260px;
+    }
+    .site-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3em;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 600px) {
+    .sites-grid {
+        grid-template-columns: 1fr;
+    }
+}
